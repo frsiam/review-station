@@ -3,7 +3,7 @@ import { CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'r
 import { ChartContext } from '../Dashboard/Dashboard';
 
 const Linechart = () => {
-    const [chart, setChart] = useContext(ChartContext)
+    const [chart] = useContext(ChartContext)
     return (
         <div>
             <h1 className='text-2xl font-bold mb-5 ml-32 text-blue-600 uppercase'>Month wise sell</h1>

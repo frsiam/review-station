@@ -1,32 +1,34 @@
 import React, { useContext } from 'react';
-import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 import { ChartContext } from '../Dashboard/Dashboard';
 
-const Areachart = () => {
+const Barchart = () => {
     const [chart] = useContext(ChartContext)
     return (
         <div>
             <h1 className='text-2xl font-bold mb-5 ml-32 text-blue-600 uppercase'>Investment vs Revenue</h1>
-            <AreaChart
-                width={500}
+            <BarChart
+                width={600}
                 height={400}
                 data={chart}
                 margin={{
-                    top: 10,
+                    top: 20,
                     right: 30,
-                    left: 0,
-                    bottom: 0,
+                    left: 20,
+                    bottom: 5,
                 }}
             >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
                 <YAxis />
                 <Tooltip />
-                <Area type="monotone" dataKey="investment" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-                <Area type="monotone" dataKey="revenue" stackId="1" stroke="#ffc658" fill="#ffc658" />
-            </AreaChart>
+                <Legend />
+                <Bar dataKey="sell" stackId="a" fill="#8884d8" />
+                <Bar dataKey="investment" stackId="a" fill="#82ca9d" />
+                <Bar dataKey="revenue" fill="#ffc658" />
+            </BarChart>
         </div>
     );
 };
 
-export default Areachart;
+export default Barchart;
