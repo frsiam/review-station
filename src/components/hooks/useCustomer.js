@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 const useCustomer = () => {
-    const [customers,setCustomers] = useState([])
+    const [customers, setCustomers] = useState([])
 
     useEffect(() => {
         fetch('fakedata.json')
