@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Hashim Amla",
+        "rating": 4,
+        "description": "A powerful, good-looking and robust laptop with a bold display and a great keyboard",
+        "img": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2012/07/13/20/14-Amla-getty.jpg?quality=75&width=990&auto=webp&crop=982:726,smart"
+    },
+    {
+        "name": "Imran Khan",
+        "rating": 4.5,
+        "description": "A solid everyday laptop with familiar shortcomings",
+        "img": "https://static.theprint.in/wp-content/uploads/2022/02/newww.jpg?compress=true&quality=80&w=750&dpr=1.0"
+    },
+    {
+        "name": "Rajin Saleh",
+        "rating": 3.5,
+        "description": "Yes, they finally fixed the webcam",
+        "img": "https://dailyasianage.com/library/2018/11/03/1541274263_2.jpg"
+    },
+    {
+        "name": "Shahrier Nafees",
+        "rating": 5,
+        "description": "A solid mid-range Windows laptop for for office and personal use",
+        "img": "https://media-eng.dhakatribune.com/uploads/2018/11/nafees-1541945918520.jpg"
+    },
+    {
+        "name": "Muhammad Yousuf",
+        "rating": 4,
+        "description": "A reasonable everyday machine with eco credentials, but we're not green with envy",
+        "img": "https://i0.wp.com/crictoday.com/wp-content/uploads/2021/03/mohd-yousuf.jpg?resize=1024%2C576&ssl=1"
+    },
+    {
+        "name": "Mullah Baradar",
+        "rating": 4.5,
+        "description": "You should probably Go and buy a different laptop",
+        "img": "https://images.news18.com/ibnlive/uploads/2021/08/afghanistan-4-16290545253x2.jpg?impolicy=website&width=510&height=356"
+    }
+]
