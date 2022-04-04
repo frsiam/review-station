@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
+import Areachart from '../Charts/Areachart';
 import Linechart from '../Charts/Linechart';
 
 export const ChartContext = createContext()
@@ -12,9 +13,12 @@ const Dashboard = () => {
             .then(data => setChart(data))
     }, [])
     return (
-        <div className='lg:mx-40 mx-10 my-10'>
+        <div className='my-20 mx-32 grid justify-center'>
             <ChartContext.Provider value={[chart, setChart]}>
-                <Linechart></Linechart>
+                <div className='xl:flex xl:gap-16 lg:flex lg:gap-10'>
+                    <Linechart></Linechart>
+                    <Areachart></Areachart>
+                </div>
             </ChartContext.Provider>
         </div>
     );
