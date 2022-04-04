@@ -1,9 +1,14 @@
 import React from 'react';
+import CustomerCard from '../CustomerCard/CustomerCard';
+import useCustomer from '../hooks/useCustomer';
 
 const Reviews = () => {
+    const [customers] = useCustomer()
     return (
         <div>
-            <h1 className='text-3xl'>Reviews section</h1>
+            {
+                customers.map((customer, index) => <CustomerCard key={index} customer={customer}></CustomerCard>)
+            }
         </div>
     );
 };

@@ -6,6 +6,7 @@ import useCustomer from '../hooks/useCustomer';
 const Home = () => {
     const [customers] = useCustomer()
     console.log(customers[0])
+    const x = customers.slice(3)
     return (
         <>
             <div className='p-3 border-4 mx-20 grid grid-cols-2'>
@@ -20,7 +21,7 @@ const Home = () => {
             </div>
             <div>
                 {
-                    customers.map((customer, index) => <CustomerCard customer={customer} key={index}></CustomerCard>)
+                    x.map((customer, index) => <CustomerCard customer={customer} key={index}></CustomerCard>)
                 }
             </div>
         </>
