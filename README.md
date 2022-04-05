@@ -1,6 +1,6 @@
 # Review Station
 
-## Live Website Link :|:|:       https://review-station.netlify.app/
+## Live Website Link :       https://review-station.netlify.app/
 
 * Review station is the number one website which provide best analysis for technological product and which help customer to find the best choice from current market avaiable product.
 
