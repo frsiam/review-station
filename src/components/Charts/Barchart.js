@@ -5,7 +5,7 @@ import { ChartContext } from '../Dashboard/Dashboard';
 const Barchart = () => {
     const [chart] = useContext(ChartContext)
     return (
-        <div>
+        <>
             <h1 className='text-2xl font-bold mb-5 ml-32 text-blue-600 uppercase'>Investment vs Revenue</h1>
             <BarChart
                 width={600}
@@ -27,7 +27,7 @@ const Barchart = () => {
                 <Bar dataKey="investment" stackId="a" fill="#82ca9d" />
                 <Bar dataKey="revenue" fill="#ffc658" />
             </BarChart>
-        </div>
+        </>
     );
 };
 

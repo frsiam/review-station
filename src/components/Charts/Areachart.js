@@ -5,7 +5,7 @@ import { ChartContext } from '../Dashboard/Dashboard';
 const Areachart = () => {
     const [chart] = useContext(ChartContext)
     return (
-        <div>
+        <>
             <h1 className='text-2xl font-bold mb-5 ml-32 text-blue-600 uppercase'>Investment vs Revenue</h1>
             <AreaChart
                 width={500}
@@ -25,7 +25,7 @@ const Areachart = () => {
                 <Area type="monotone" dataKey="investment" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
                 <Area type="monotone" dataKey="revenue" stackId="1" stroke="#ffc658" fill="#ffc658" />
             </AreaChart>
-        </div>
+        </>
     );
 };
 
